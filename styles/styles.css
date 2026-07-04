@@ -82,7 +82,7 @@ body {
   width: 300px;
   height: 300px;
 
-  top: 400px;
+  top: 200px;
   background: #6d6dff;
   filter: blur(200px);
   z-index: -1;
