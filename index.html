@@ -3,14 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fuentes de google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fuentes de google-->
+
+    <!--ICONOS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <section class="header">
-        <h1 class="name">Christian Arriaga Ochoa</h1>
-        <h5 class="role">Desarrollador Fullstack</h5>
-        <p class="summary">
+    <header class="header">
+      <section class="header__content">
+        <h1 class="header__name">
+          <span class="header__name_line">Christian</span>
+          <span class="header__name_line">Arriaga Ochoa</span>
+        </h1>
+        <h5 class="header__role">Desarrollador Fullstack</h5>
+        <p class="header__summary">
           Arquitecto de Software y Desarrollador Java Backend con sólida
           trayectoria en el diseño, desarrollo y optimización de soluciones
           empresariales y productos digitales. Experto en Java, Spring Boot y
@@ -19,14 +40,253 @@
           continua, gestionando el ciclo de vida completo del desarrollo para
           entregar sistemas robustos y eficientes.
         </p>
-        <img
-          class="profile-image"
-          src="./images/profile.jpg"
-          alt="Imagen de perfil de Christian Arriaga Ochoa"
-        />
+        <div class="header__PhotoContainer">
+          <img
+            class="header__image"
+            src="./images/profile.jpeg"
+            alt="Imagen de perfil de Christian Arriaga Ochoa"
+          />
+          <!--Gradiente decorativo para la foto-->
+          <div class="header__gradient"></div>
+        </div>
+        <div class="header__buttonsGroup">
+          <button type="button" class="header__button">Descargar CV</button>
+          <button type="button" class="header__button">Enlace a GitHub</button>
+          <button type="button" class="header__button">Hablemos</button>
+        </div>
       </section>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="main">
+      <section class="technologies">
+        <h1 class="technologies__title">Habilidades y herramientas</h1>
+        <div class="technologies__content">
+          <img
+            class="technologies__content_icon"
+            src="./svgIcons/html5.svg"
+            alt="Logo de HTML5"
+          />
+          <img
+            class="technologies__content_icon"
+            src="./svgIcons/css.svg"
+            alt="Logo de CSS"
+          />
+          <img
+            class="technologies__content_icon"
+            src="./svgIcons/javascript.svg"
+            alt="Logo de JavaScript"
+          />
+          <img
+            class="technologies__content_icon"
+            src="./svgIcons/git.svg"
+            alt="Logo de Git"
+          />
+          <img
+            class="technologies__content_icon"
+            src="./svgIcons/github.svg"
+            alt="Logo de GitHub"
+          />
+          <img
+            class="technologies__content_icon"
+            src="./svgIcons/openai.svg"
+            alt="Logo de openai"
+          />
+        </div>
+      </section>
+      <section class="projects">
+        <h1 class="projects__title">Proyectos destacados</h1>
+        <div class="projects__container">
+          <div class="projects__card">
+            <img
+              class="projects__card_image"
+              src="./images/WebCoffeeShop.png"
+              alt="Imagen del proyecto 1"
+            />
+            <h2 class="projects__card_title">Pagina Web de una cafetería</h2>
+            <p class="projects__card_description">
+              Desarrollo de una landing page responsiva para una cafetería
+              siguiendo un brief de diseño. Incluye estructura semántica,
+              maquetación con Flexbox, creación de secciones nuevas y un
+              formulario de contacto funcional.Logro: Implementé desde cero el
+              diseño completo de la página, organicé el proyecto con buenas
+              prácticas y publiqué la versión final utilizando GitHub Pages.
+            </p>
+            <div class="projects__card_buttonsGroup">
+              <a
+                class="projects__card_button_demo"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo en
+                vivo
+              </a>
+              <a
+                class="projects__card_button"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <div class="projects__card">
+            <img
+              class="projects__card_image"
+              src="./images/WebCoffeeShop.png"
+              alt="Imagen del proyecto 1"
+            />
+            <h2 class="projects__card_title">Pagina Web de una cafetería</h2>
+            <p class="projects__card_description">
+              Desarrollo de una landing page responsiva para una cafetería
+              siguiendo un brief de diseño. Incluye estructura semántica,
+              maquetación con Flexbox, creación de secciones nuevas y un
+              formulario de contacto funcional.Logro: Implementé desde cero el
+              diseño completo de la página, organicé el proyecto con buenas
+              prácticas y publiqué la versión final utilizando GitHub Pages.
+            </p>
+            <div class="projects__card_buttonsGroup">
+              <a
+                class="projects__card_button_demo"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo en
+                vivo
+              </a>
+              <a
+                class="projects__card_button"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer">
+        <!--Gradiente decorativo para la foto-->
+        <div class="footer__gradient"></div>
+        <h1 class="footer__contact_title">Contacto</h1>
+        <h5 class="footer__contact_email">
+          christian.arriaga.ochoa.1998@gmail.com
+        </h5>
+        <div class="footer__contact_social">
+          <a
+            class="footer__contact_social_icon"
+            href="https://www.linkedin.com/in/chrisdevjavaapi/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              class="footer__contact_social_icon_svg"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid"
+              viewBox="0 0 256 256"
+            >
+              <path
+                fill="#fff"
+                d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.91 39.91 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186zM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009s9.851-22.014 22.008-22.016c12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"
+              />
+            </svg>
+          </a>
+          <a
+            class="footer__contact_social_icon"
+            href="https://www.facebook.com/chrisdevjavaapi/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 666.667 666.667"
+              class="footer__contact_social_icon_svg"
+            >
+              <defs>
+                <clipPath id="a" clipPathUnits="userSpaceOnUse">
+                  <path d="M0 700h700V0H0Z" />
+                </clipPath>
+              </defs>
+              <g
+                clip-path="url(#a)"
+                transform="matrix(1.33333 0 0 -1.33333 -133.333 800)"
+              >
+                <path
+                  d="M0 0c0 138.071-111.929 250-250 250S-500 138.071-500 0c0-117.245 80.715-215.622 189.606-242.638v166.242h-51.552V0h51.552v32.919c0 85.092 38.508 124.532 122.048 124.532 15.838 0 43.167-3.105 54.347-6.211V81.986c-5.901.621-16.149.932-28.882.932-40.993 0-56.832-15.528-56.832-55.9V0h81.659l-14.028-76.396h-67.631v-171.773C-95.927-233.218 0-127.818 0 0"
+                  style="
+                    fill: #fff;
+                    fill-opacity: 1;
+                    fill-rule: nonzero;
+                    stroke: none;
+                  "
+                  transform="translate(600 350)"
+                />
+              </g>
+            </svg>
+          </a>
+          <a
+            class="footer__contact_social_icon"
+            href="https://www.instagram.com/chrisdevjavaapi/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 264.583 264.583"
+            >
+              <defs>
+                <linearGradient id="d">
+                  <stop offset="0" stop-color="#ff005f" />
+                  <stop offset="1" stop-color="#fc01d8" />
+                </linearGradient>
+                <linearGradient id="c">
+                  <stop offset="0" stop-color="#780cff" />
+                  <stop offset="1" stop-color="#820bff" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="b">
+                  <stop offset="0" stop-color="#fc0" />
+                  <stop offset="1" stop-color="#fc0" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="a">
+                  <stop offset="0" stop-color="#fc0" />
+                  <stop offset=".124" stop-color="#fc0" />
+                  <stop offset=".567" stop-color="#fe4a05" />
+                  <stop offset=".694" stop-color="#ff0f3f" />
+                  <stop offset="1" stop-color="#fe0657" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path
+                fill="#fff"
+                d="M132.345 33.973c-26.716 0-30.07.117-40.563.594-10.472.48-17.62 2.136-23.876 4.567-6.47 2.51-11.958 5.87-17.426 11.335-5.472 5.464-8.834 10.948-11.354 17.412-2.44 6.252-4.1 13.397-4.57 23.858-.47 10.486-.593 13.838-.593 40.535s.119 30.037.594 40.522c.482 10.465 2.14 17.609 4.57 23.859 2.515 6.465 5.876 11.95 11.346 17.414 5.466 5.468 10.955 8.834 17.42 11.345 6.26 2.431 13.41 4.088 23.881 4.567 10.493.477 13.844.594 40.559.594 26.719 0 30.061-.117 40.555-.594 10.472-.48 17.63-2.136 23.888-4.567 6.468-2.51 11.948-5.877 17.414-11.345 5.472-5.464 8.834-10.949 11.354-17.412 2.419-6.252 4.079-13.398 4.57-23.858.472-10.486.595-13.828.595-40.525s-.123-30.047-.594-40.533c-.492-10.465-2.152-17.608-4.57-23.858-2.521-6.466-5.883-11.95-11.355-17.414-5.472-5.468-10.944-8.827-17.42-11.335-6.271-2.431-13.424-4.088-23.897-4.567-10.493-.477-13.834-.594-40.558-.594zm-8.825 17.715c2.62-.004 5.542 0 8.825 0 26.266 0 29.38.094 39.752.565 9.591.438 14.797 2.04 18.264 3.385 4.591 1.782 7.864 3.912 11.305 7.352 3.443 3.44 5.575 6.717 7.362 11.305 1.346 3.46 2.951 8.663 3.388 18.247.47 10.363.573 13.475.573 39.71 0 26.233-.102 29.346-.573 39.709-.44 9.584-2.042 14.786-3.388 18.247-1.783 4.587-3.919 7.854-7.362 11.292-3.443 3.441-6.712 5.57-11.305 7.352-3.463 1.352-8.673 2.95-18.264 3.388-10.37.47-13.486.573-39.752.573-26.268 0-29.38-.102-39.751-.573-9.592-.443-14.797-2.044-18.267-3.39-4.59-1.781-7.87-3.911-11.313-7.352-3.443-3.44-5.574-6.709-7.362-11.298-1.346-3.461-2.95-8.663-3.387-18.247-.472-10.363-.566-13.476-.566-39.726s.094-29.347.566-39.71c.438-9.584 2.04-14.786 3.387-18.25 1.783-4.588 3.919-7.865 7.362-11.305 3.443-3.441 6.722-5.57 11.313-7.357 3.468-1.351 8.675-2.949 18.267-3.389 9.075-.41 12.592-.532 30.926-.553zm61.337 16.322c-6.518 0-11.805 5.277-11.805 11.792 0 6.512 5.287 11.796 11.805 11.796s11.804-5.284 11.804-11.796c0-6.513-5.287-11.796-11.805-11.796zm-52.512 13.782c-27.9 0-50.519 22.603-50.519 50.482s22.62 50.471 50.52 50.471 50.51-22.592 50.51-50.471-22.613-50.482-50.513-50.482zm0 17.715c18.11 0 32.792 14.67 32.792 32.767 0 18.096-14.683 32.767-32.792 32.767s-32.791-14.671-32.791-32.767c0-18.098 14.68-32.767 32.791-32.767"
+              />
+            </svg>
+          </a>
+          <a
+            class="footer__contact_social_icon"
+            href="https://github.com/ChrisDev1998"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 1024 1024"
+            >
+              <path
+                fill="#ffff"
+                fill-rule="evenodd"
+                d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 417.92 350.08 485.76 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36-128.64 23.68-161.92-31.36-172.16-60.16-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-33.28-.64-33.92 40.32-.64 69.12 37.12 78.72 52.48 46.08 77.44 119.68 55.68 149.12 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-232.96-56.96-232.96-252.8 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 196.48-119.68 240-233.6 252.8 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 929.92 1024 737.92 1024 512 1024 229.12 794.88 0 512 0"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
