@@ -26,14 +26,14 @@
   <body>
     <header class="header">
       <section class="header__content">
-        <h1 class="header__name">
-          <span class="header__name_line">Christian</span>
-          <span class="header__name_line">Arriaga Ochoa</span>
+        <div class="header__name">
+          <h1 class="header__name_line">Christian</h1>
+          <h1 class="header__name_line">Arriaga Ochoa</h1>
           <span class="header__name_role"
             >Arquitecto de Software | Java Backend & Spring Boot |
             Microservicios | Docker | Liderazgo Técnico</span
           >
-        </h1>
+        </div>
 
         <p class="header__summary">
           Arquitecto de Software y Desarrollador Java Backend con sólida
@@ -100,11 +100,26 @@
         <h1 class="projects__title">Proyectos destacados</h1>
         <div class="projects__container">
           <div class="projects__card">
-            <img
-              class="projects__card_image"
-              src="./images/WebCoffeeShop.png"
-              alt="Imagen del proyecto 1"
-            />
+            <div class="projects__card_imageContainer">
+              <img
+                class="projects__card_imageContainer_image"
+                src="./images/WebCoffeeShop.png"
+                alt="Imagen del proyecto 1"
+              />
+              <div class="projects__card_imageContainer_tech">
+                <!--Aqui van las tecnologias que se utilizaron-->
+                <img
+                  src="./svgIcons/html5.svg"
+                  alt="Logo de HTML5"
+                  class="projects__card_imageContainer_Tech_icon"
+                />
+                <img
+                  src="./svgIcons/css.svg"
+                  alt="Logo de CSS"
+                  class="projects__card_imageContainer_Tech_icon"
+                />
+              </div>
+            </div>
             <h2 class="projects__card_title">Pagina Web de una cafetería</h2>
             <p class="projects__card_description">
               Desarrollo de una landing page responsiva para una cafetería
@@ -117,7 +132,7 @@
             <div class="projects__card_buttonsGroup">
               <a
                 class="projects__card_button_demo"
-                href="#"
+                href="https://chrisdev1998.github.io/web_project_coffeeshop_es/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -126,7 +141,7 @@
               </a>
               <a
                 class="projects__card_button"
-                href="#"
+                href="https://github.com/ChrisDev1998/web_project_coffeeshop_es"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -135,32 +150,52 @@
             </div>
           </div>
           <div class="projects__card">
-            <img
-              class="projects__card_image"
-              src="./images/WebCoffeeShop.png"
-              alt="Imagen del proyecto 1"
-            />
-            <h2 class="projects__card_title">Pagina Web de una cafetería</h2>
+            <div class="projects__card_imageContainer">
+              <img
+                class="projects__card_imageContainer_image"
+                src="./images/404HopeNotFound.png"
+                alt="Imagen del proyecto 1"
+              />
+              <div class="projects__card_imageContainer_tech">
+                <!--Aqui van las tecnologias que se utilizaron-->
+                <img
+                  src="./svgIcons/unity.svg"
+                  alt="Logo de Unity"
+                  class="projects__card_imageContainer_Tech_icon"
+                />
+                <img
+                  src="./svgIcons/cSharp.svg"
+                  alt="Logo de C#"
+                  class="projects__card_imageContainer_Tech_icon"
+                />
+              </div>
+            </div>
+            <h2 class="projects__card_title">
+              404:Hope Not Found--Survive the night
+            </h2>
             <p class="projects__card_description">
-              Desarrollo de una landing page responsiva para una cafetería
-              siguiendo un brief de diseño. Incluye estructura semántica,
-              maquetación con Flexbox, creación de secciones nuevas y un
-              formulario de contacto funcional.Logro: Implementé desde cero el
-              diseño completo de la página, organicé el proyecto con buenas
-              prácticas y publiqué la versión final utilizando GitHub Pages.
+              Es un videojuego roguelite de acción top-down donde el jugador
+              debe defender una fogata de oleadas de enemigos mientras construye
+              combinaciones de power-ups temporales que modifican su estilo de
+              juego. El proyecto está desarrollado en Unity y cuenta con
+              sistemas personalizados de generación de oleadas, object pooling,
+              IA de enemigos con comportamientos únicos, sistema de críticos con
+              pity, combinaciones de habilidades y efectos visuales mediante
+              Shader Graph.
             </p>
             <div class="projects__card_buttonsGroup">
               <a
                 class="projects__card_button_demo"
-                href="#"
+                href="https://deadco.itch.io/404-hope-not-found"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo en
                 vivo
               </a>
+              <!--Este repositorio no es publico pero es para mantener las tarjetas con su estructura-->
               <a
-                class="projects__card_button"
+                class="projects__card_button_no_available"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -201,7 +236,7 @@
           </a>
           <a
             class="footer__contact_social_icon"
-            href="https://www.facebook.com/chrisdevjavaapi/"
+            href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -234,7 +269,7 @@
           </a>
           <a
             class="footer__contact_social_icon"
-            href="https://www.instagram.com/chrisdevjavaapi/"
+            href="https://www.instagram.com"
             target="_blank"
             rel="noopener noreferrer"
           >
