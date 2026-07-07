@@ -36,7 +36,7 @@ body {
 
 .header__name_line {
   display: block;
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Archivo Black", Impact, "Arial Black", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 4.5rem;
@@ -47,7 +47,7 @@ body {
 
 .header__name_role {
   display: block;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.2rem;
@@ -57,10 +57,15 @@ body {
 }
 .header__summary {
   grid-area: header__summary;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.5;
   padding-top: 10px;
   margin: 0;
+
+  color: #ffffff;
 }
 
 .header__buttonsGroup {
@@ -160,7 +165,7 @@ body {
 }
 
 .technologies__title {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Archivo Black", Impact, "Arial Black", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.5rem;
@@ -192,7 +197,7 @@ body {
 }
 
 .projects__title {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Archivo Black", Impact, "Arial Black", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.5rem;
@@ -278,7 +283,7 @@ body {
 }
 
 .projects__card_title {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Archivo Black", Impact, "Arial Black", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
@@ -289,7 +294,7 @@ body {
 
 .projects__card_description {
   /* Desarrollo de una landing page responsiva para una cafetería siguiendo un brief de diseño. Incluye estructura semántica, maquetación con Flexbox, creación de secciones nuevas y un formulario de contacto funcional.Logro: Implementé desde cero el diseño completo de la página, organicé el proyecto con buenas prácticas y publiqué la versión final utilizando GitHub Pages. */
-  font-family: "Open Sans";
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
@@ -327,6 +332,7 @@ body {
 
 .projects__card_button_demo {
   background-color: transparent;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   border: none;
   color: #6d6dff;
   font-size: 1.1rem;
@@ -360,7 +366,7 @@ body {
   animation: pulseGradient 2.5s ease-in-out infinite;
 }
 .footer__contact_title {
-  font-family: "Archivo Black";
+  font-family: "Archivo Black", Impact, "Arial Black", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.5rem;
@@ -371,7 +377,7 @@ body {
   color: #ffffff;
 }
 .footer__contact_email {
-  font-family: "Open Sans";
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
